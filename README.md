@@ -28,6 +28,7 @@ I am currently working towards:
 ## TryHackMe
 
 ## Contact Me
-LinkedIn: https://www.linkedin.com/in/jamie-mcgarrigle-b20b333a8/
+LinkedIn: www.linkedin.com/in/jamie2306
+
 TryHackMe: https://tryhackme.com/p/ja.mie
 
