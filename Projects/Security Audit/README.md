@@ -19,4 +19,4 @@ The project required me to review the security posture of a fictional organisati
 ## Outcome
 After analysing Botium Toys' existing security controls, I was able to identify missing security measures and compliance gaps. I produced recommendations to improve Botium Toys' overall security posture.
 
-More detail on my findings can be found [here](./findings.md)
+More detail on my findings can be found [here](./report.md)
