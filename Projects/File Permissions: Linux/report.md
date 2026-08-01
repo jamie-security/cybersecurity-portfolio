@@ -12,7 +12,7 @@ Once in the projects directory, I used the ```ls -la``` command. This displayed 
 
 ## How permissions are represented in Linux
 Permissions in Linux are represented as a 10-character string. Each character in this string can be deconstructed:
-- The 1st character is either a ```d``` or a hyphen ```(-)```. It represents the file type. ```d``` represents a directory, whilst a hyphen ```(-)``` represents a regular file.
+The 1st character is either a ```d``` or a hyphen ```(-)```. It represents the file type. ```d``` represents a directory, whilst a hyphen ```(-)``` represents a regular file.
 
 The remaining 9 characters are then represented as 3 groups, user, group and other. Within these groups the characters can either be read ```(r)```, write ```(w)``` and execute ```(x)```. These indicate the specific permissions the group has. 
 
