@@ -6,7 +6,7 @@ I completed this project as part of the Google Cybersecurity Professional Certif
 This project involved investigating potential security issues concerning login attempts and employee machines at a large organisation.
 
 ## Objectives
-- Use SQL to investigate suspicious login attempts and;
+- Use SQL to investigate suspicious login attempts
 - Retrieve relevant employee information from a database
 - Use operators to filter data based on multiple conditions
 - Use SQL wildcards to identify patterns
