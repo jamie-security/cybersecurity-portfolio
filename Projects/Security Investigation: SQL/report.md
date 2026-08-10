@@ -6,7 +6,7 @@ I completed this project as part of the Google Cybersecurity Professional Certif
 This project involved investigating potential security issues concerning login attempts and employee machines at a large organisation. To perform these tasks, I queried the `employees` and `log_in_attempts` tables.
 
 ## Investigating Failed After Hours Login Attempts
-During my investigation, I found that multiple login attempts were being made after business hours, these all had to be investigated. To do this I used the following SQL code:
+As part of the investigation I had to identify and investigate login attempts occuring after business hours. To do this I used the following SQL code:
 ```
 SELECT *
 FROM log_in_attempts
@@ -14,7 +14,7 @@ WHERE login_time > '18:00' AND success = 0;
 ```
 By using `SELECT *` and `FROM log_in_attempts`, I retrieved all data inside the table. By using the `WHERE` clause, I was able to filter the resulting data with two conditions.
 
-The first condition, `login_time > '18:00'` filters the data to display only login times that occured after 18:00. 
+The first condition, `login_time > '18:00'` filters the data to display only login attempts that occured after 18:00. 
 
 The second condition, `success = 0;` filters the data to display only login attempts that have failed. In this database, failed attempts are represented as a `0` and successful attempts are represented as a `1`.
 
@@ -25,12 +25,12 @@ A suspicious event occured on 2022-05-09. I needed to investigate all login atte
 ```
 SELECT *
 FROM log_in_attempts
-WHERE login_date = '2022-05-09- OR login_date = '2022-05-08';
+WHERE login_date = '2022-05-09` OR login_date = '2022-05-08';
 ```
 By using the `OR` operator I was able to filter the data where either date condition was true. This allowed me and the security team to compare login activity across the two dates.
 
 ## Investigating Login Attempts Outside of Mexico
-My investigation led my team and I to believe that the issues regarding login attempts were occuring outside of Mexico. We therefore, needed to filter the login attempts to exclude attempts made in Mexico. To do this I used the following SQL code:
+My investigation led my team and I to believe that the issues regarding login attempts were occurring outside of Mexico. We therefore, needed to filter the login attempts to exclude attempts made in Mexico. To do this I used the following SQL code:
 ```
 SELECT *
 FROM log_in_attempts
@@ -38,23 +38,23 @@ WHERE NOT country LIKE 'MEX%';
 ```
 I used the `LIKE` operator, paired with the `%` wildcard to search for patterns rather than an exact value. The `%` wildcard represents any number of characters after `MEX`, this allowed me to query for results matching both `MEX` and `MEXICO`.
 
-The `NOT` operator was used to exclude results where `country` was `MEX` or `MEXICO`, leaving login attempts originiating outside of Mexico to be displayed. 
+The `NOT` operator was used to exclude results where `country` was `MEX` or `MEXICO`, leaving login attempts originating outside of Mexico to be displayed. 
 
 ## Identifying Marketing Employees in the East Building
-Another task I had to complete was identifying employee machines that needed to be updated. I had to update the machines for employees that were in the marketing department and were in the east building. To do this I used the following SQL code:
+I identified employee machines that needed to be updated. I updated the machines for employees that were in the Marketing department and were in the East building. To do this I used the following SQL code:
 ```
 SELECT *
 FROM employees
-WHERE department = 'Marketing' and office LIKE 'East%';
+WHERE department = 'Marketing' AND office LIKE 'East%';
 ```
-I included two conditions, first one being `department = 'Marketing'`. This filtered the data to display employees in the marketing department only.
+I included two conditions, first one being `department = 'Marketing'`. This filtered the data to display employees in the Marketing department only.
 
-The second condition, `office LIKE 'East%'`, filtered the data to display eployees with offices beginning with `East`.
+The second condition, `office LIKE 'East%'`, filtered the data to display employees with offices beginning with `East`.
 
-I used the `AND` operator to ensure that the results displayed met both conditions. This meant that only employees in the marketing department in the east building were displayed. 
+I used the `AND` operator to ensure that the results displayed met both conditions. This meant that only employees in the Marketing department in the east building were displayed. 
 
 ## Identifying Employees in Finance or Sales
-After updating the machines for marketing employees in the east building, I then had to update the machines for employees in either the finance or sales depatments. To do this I used the following SQL code:
+After updating the machines for marketing employees in the east building, I then updated the machines for employees in either the finance or sales depatments. To do this I used the following SQL code:
 
 ```
 SELECT *
