@@ -39,7 +39,36 @@ Examples include:
 - These controls are not only technical, but also physical and administrative.
 
 ---
-# Course 2: Play It Safe: Management Security Risks
+# Course 2: Play It Safe: Manage Security Risks
 ## Key Concepts
-### 
+### Threats
+Any potential event that can negatively impact an organisations assets. 
+### Risk
+Anything that can impact the confidentiality, integrity and availability of an organisations assets.
+### Vulnerabilities
+Weaknesses that can be exploited by a threat.
+Examples:
+- Weak passwords
+- Misconfigured systems
+- Unpatched software
+
+### Risk Management
+Risk management is the process where an organisations security professionals identify potential threats and vulnerabilities, assess their impact to the organisation, and implement the appropiate security controls.
+
+NIST have developed a framework for risk management which include 7 categories: Prepare, categorise, select, implement, assess, authorise and monitor.
+
+### Principle of Least Privilege
+Users should only have the minimum access necessary to perform their tasks. This limits the potential damage if their credentials are compromised.
+
+### Project
+I applied the concepts of course 2 when completing a security audit project. In this project I reviewed the security controls of a fictional organisation and identified missing controls as well as recommended improvements.
+
+### Key Takeaways From Course 2
+- Organisations perform risk management to identify and prioritise risk
+- Vulnerabilities can lead to organisations being exposed more to threats
+- The principle of least privilege reduces unnecessary access to systems and data
+
+---
+# Course 3: Connect and Protect: Networks and Network Security
+## Key Concepts
 
