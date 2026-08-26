@@ -73,4 +73,56 @@ I applied the concepts of course 2 when completing a security audit project. In 
 ---
 # Course 3: Connect and Protect: Networks and Network Security
 ## Key Concepts
+### Network
+A group of connected devices that communicate with each other. Types of networks include LANs and WANs.
+
+Some examples of network tools include hubs, switches, routers and modems.
+
+### Cloud networks
+A collection of servers/computers that store resources and data in remote data centres that can be accessed via the internet. 
+
+CSPs provide 3 main services: Software as a service, Infrastructure as a service and Platform as a service. 
+
+Cloud networks can provide reliability, decreased costs and increased scalability for organisations. 
+
+### TCP/IP Model
+Framework used to visualise how data is organised and transmitted across networks. Helps network engineers conceptualise processes on the network and communicate where disruptions or security threats occur.
+
+The TCP/IP model has 4 layers: Network access layer, internet layer, transport layer and application layer.
+
+### Network Security
+Involves protecting networks and network resources from unauthorised access, attacks, and disruptions.
+
+### Firewalls
+Monitors traffic to and from a network. Types of firewalls include hardware, software and cloud-based firewalls. 
+
+Firewalls that are misconfigured or not configured at all create security vulnerabilities.
+
+### Denial of Service
+DoS attacks target networks or servers and flood them with network traffic. 
+
+There are different types of DoS attacks including DDoS, SYN flood attack, ICMP flood and ping of death. 
+
+In the project as part of course 3, ICMP flooding was used as a DoS attack. 
+
+### Project
+In this project I completed an incident response analysis on a fictional company which had experienced an ICMP flood attack.
+
+To analyse the incident, I used the five parts of the NIST Cybersecurity Framework:
+1. Identify
+2. Protect
+3. Detect
+4. Respond
+5. Recover
+
+More details of this project can be found here [View Incident Response Analysis](../../Projects/Incident%20Response%20Analysis/README.md)
+
+## Key Takeaways from Course 3
+- Cloud networking can help organisations reduce costs whilst having a reliable network provided to them by a CSP
+- Firewalls, if misconfigured, create security vulnerabilities which can lead to DoS attacks.
+- Incident response gives organisations a structured approach to dealing with security incidents
+
+---
+# Course 4: Tools of the Trade: Linux and SQL
+## Key Concepts
 
