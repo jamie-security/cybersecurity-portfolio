@@ -63,7 +63,7 @@ Users should only have the minimum access necessary to perform their tasks. This
 ### Project
 I applied the concepts of course 2 when completing a security audit project. In this project I reviewed the security controls of a fictional organisation and identified missing controls as well as recommended improvements.
 
- [Course 2 security audit project](../Projects/Security%20Audit%20/README.md)
+ [Course 2 security audit project](../../Projects/Security%20Audit/README.md)
 
 ### Key Takeaways From Course 2
 - Organisations perform risk management to identify and prioritise risk
@@ -115,7 +115,7 @@ To analyse the incident, I used the five parts of the NIST Cybersecurity Framewo
 4. Respond
 5. Recover
 
-More details of this project can be found here [View Incident Response Analysis](../../Projects/Incident%20Response%20Analysis/README.md)
+More details of this project can be found[here](../../Projects/Incident%20Response%20Analysis/README.md)
 
 ## Key Takeaways from Course 3
 - Cloud networking can help organisations reduce costs whilst having a reliable network provided to them by a CSP
