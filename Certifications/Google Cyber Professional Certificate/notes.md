@@ -115,7 +115,7 @@ To analyse the incident, I used the five parts of the NIST Cybersecurity Framewo
 4. Respond
 5. Recover
 
-More details of this project can be found[here](../../Projects/Incident%20Response%20Analysis/README.md)
+[Course 3 incident response project](../../Projects/Incident%20Response%20Analysis/README.md)
 
 ## Key Takeaways from Course 3
 - Cloud networking can help organisations reduce costs whilst having a reliable network provided to them by a CSP
@@ -124,5 +124,137 @@ More details of this project can be found[here](../../Projects/Incident%20Respon
 
 ---
 # Course 4: Tools of the Trade: Linux and SQL
+## Linux
+
+### Linux Command Line
+I developed practical experience using the Linux command line to navigate directories and manage file permissions.
+
+Commands used during the course include:
+```
+cd
+ls
+ls -la
+chmod
+```
+### File Permissions
+File permissions in Linux determine what users can do with files and directories.
+
+There are 3 ownership categories in Linux for setting permissions, they are:
+- User: An individual owning the file/directory
+- Group: A collection of users who share common access to files/directories
+- Other: All other users on the system who aren't owners or part of a group
+
+Permissions are then split up into 3 main types:
+- Read (r)
+- Write (w)
+- Execute (x)
+
+Permissions in Linux are represented in a 10-character string, example:
+```
+-rwxrw-r--
+```
+The first character in the string represent the file type. In my example, the file type is a regular file. The remaining 9 characters represent the user, group and other.
+
+### chmod
+To modify permissions in Linux, the ```chmod``` command is used. 
+
+Example:
+```chmod g-x drafts```
+My example above removes execute permissions from the group for the drafts directory.
+
+### Hidden Files
+To display hidden files in linux, the comand ```ls -la``` is used. 
+
+To know if a file is hidden or not, a ```.``` will be at the beginning of the file name.
+
+### Project
+I completed a project reviewing and modifying Linux file permissions within a fictional organisation.
+
+[Course 4 Linux project](../../Projects/File%20Permissions:%20Linux/README.md)
+
+## SQL
+### SQl Queries
+SQL is used to retrieve and filter information stored in databases.
+
+I practiced using:
+- ```SELECT```
+- ```FROM```
+- ```WHERE```
+- ```AND```
+- ```OR```
+- ```NOT```
+- ```LIKE```
+
+```SELECT``` and ```FROM``` are used to retrieve all the information in a database. ```WHERE``` is used to filter the information from the database For example:
+```
+SELECT *
+FROM log_in_attempts
+WHERE login_time > '18:00';
+```
+In my example, everything is selected from the log_in_attempts table, but only the results where login_time is after 18:00 are displayed.
+
+### AND
+```AND``` is used with ```WHERE``` and it requires that both conditions are true.
+Example:
+```
+SELECT *
+FROM log_in_attempts
+WHERE login_time > '18:00` AND success = 0;
+```
+This example will identify failed login attempts that occured after 18:00. 
+
+### OR
+```OR``` is also used with ```WHERE```. It allows either condition to be true.
+Example:
+```
+SELECT *
+FROM employees
+WHERE department = 'Finance' OR department = 'Sales';
+```
+This example will identify employees in either the finance or sales departments.
+
+### NOT
+```NOT``` is used to exclude records matching a condition
+Example:
+```
+SELECT *
+FROM employees
+WHERE NOT department = 'Information Technology';
+```
+This example will identify employees that are in any other department that isn't IT.
+
+### LIKE & Wildcards
+```LIKE``` is used to search for patterns rather than exact values. 
+The ```%``` wildcard represents zero or more characters.
+Example:
+```
+SELECT *
+FROM employees
+WHERE department = 'Marketing' AND office LIKE 'East%';
+```
+This exmaple will identify employees in the marketing department with offices beginning with ```East```.
+
+### Project
+I used SQL to investigate a security issue involving login attempts and employee information.
+I investigated:
+- Failed login attempts after business hours
+- Login attempts on specific dates
+- Login attempts originating outside Mexico
+- Marketing employees in the East building
+- Finance and Sales employees
+- Employees outside the IT department
+
+[Course 4 SQL project](../../Projects/Security%20Investigation:%20SQL/README.md)
+
+## Key Takeaways from Course 4
+- Linux provides useful tools for security administration & access control
+- File permissions are an important part of implementing least privilege
+- SQL can be used to investigate and filter security-related data
+- ```AND```, ```OR```, and ```NOT``` are used to create targeted queries
+- ```LIKE``` and ```%``` are used to identify patterns.
+
+---
+# Course 5: Assets, Threats and Vulnerabilities
 ## Key Concepts
+
 
