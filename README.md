@@ -1,12 +1,14 @@
 # Jamie Cybersecurity Portfolio
 
-Hello! Welcome to my cybersecurity portfolio. Here, I document my cybersecurity learning journey which includes:
+Hello! Welcome to my cybersecurity portfolio. Here, I document my cybersecurity learning journey.
 
-- Security certifications
-- TryHackMe labs
-- Home labs
-- Scripts
+So far my portfolio includes:
+
+- Security certifications (Google cybersecurity professional certificate)
+- TryHackMe rooms/labs
 - Projects
+
+I will be adding to my portfolio frequently to include my own scripts I've made with languages such as Python or Java, as well as home labs. 
 
 ## About me
 My name is Jamie and I am a current cybersecurity student at Liverpool John Moores University. My interests in the field include:
