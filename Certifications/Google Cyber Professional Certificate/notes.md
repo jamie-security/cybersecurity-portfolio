@@ -257,4 +257,41 @@ I investigated:
 # Course 5: Assets, Threats and Vulnerabilities
 ## Key Concepts
 
+### Assets
+An asset is something valuable to an organisation that should be proteced. 
+Examples of assets include:
+- Data
+- Hardware
+- Software
+- Systems
+- Networks
+
+### Threats
+A threat is a potential event or actor that could cause harm to an organisation or its assets.
+
+### Vulnerabilities
+A vulnerability is a weakness that could be exploited by a threat.
+Examples of vulnerabilities include:
+- Misconfigurations
+- Weak security controls
+- Unpatched systems
+- Inadueqate access controls
+
+### Security Risk
+Can occur when a threat is capable of exploiting a vulnerability and causing harm to an organisation or its assets.
+
+### Project
+I've applied these concepts throughout my previous projects by identifying security weaknesses, assessing their potential impact and recommending security controls.
+Examples include:
+- Identifying a missing security control during security audits
+- Identifying a firewall misconfiguration that allowed a DoS attack to occur
+- Identifying excessive file permissions
+- Investigating suspicious login activity using SQL
+
+## Key Takeaways from course 5
+- Organisations need to understand which assets require protection
+- Identifying vulnerabilities helps organisations reduce threat exposure
+- Professionals need to consider both technical and organisational risks
+- Security controls can be used to reduce the likelihood or impact of incidents.
+
 
